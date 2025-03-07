@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input with Icon</title>
+
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .email-input-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 8px;
+            width: 250px;
+            background-color: transparent;
+        }
+
+        .email-input {
+            flex: 1;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .icon-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+
+        body {
+            background-color: #000; /* Fondo negro como en la imagen proporcionada */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-box">
+        <div class="email-input-container">
+            <input type="email" class="email-input email-input" placeholder="Enter your email">
+            <button class="icon-button">
+                <span class="material-icons">send</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
+
