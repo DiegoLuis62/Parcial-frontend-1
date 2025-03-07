@@ -132,6 +132,29 @@
     color: #666;
 }
 
+.signup-form-container #login-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.signup-form-container .signup-form-buttons #login {
+    padding: 10px;
+    border: none;
+    background-color:crimson;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 35%;
+}
+
+.signup-form-container .signup-form-buttons #forget {
+    text-decoration: none;
+    color: crimson;
+    font-size: 0.8rem;
+    align-content: center;
+}
+
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
