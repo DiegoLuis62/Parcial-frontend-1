@@ -7,6 +7,15 @@
     border-bottom: 1px solid gray;
 }
 
+.header .logo{
+    text-align: center;
+}
+
+.header .logo img{
+    width: 125px;
+    height: 75px;    
+}
+
 .header .nav {
     display: flex;
     gap: 60px;
@@ -42,7 +51,7 @@
     background-color: transparent;
 }
 
-.container {
+.signup-container {
     display: flex;
     gap: 60px;
     justify-content: center; 
@@ -50,43 +59,43 @@
     height: 100vh;  
 }
 
-.container .signup-image{
+.signup-container .signup-image{
     width: 60%;
     height: 80%;
 }
 
-.container .signup-image img{
+.signup-container .signup-image img{
     width: 100%;
     height: 100%;
 }
 
-.container .signup-form{
+.signup-container .signup-form{
     display: grid;
     gap: 50px;
 }
 
-.container .signup-form-header{
+.signup-container .signup-form-header{
     display: grid;
     gap: 15px;
 }
 
-.container .signup-form-container{
+.signup-container .signup-form-container{
     display: grid;
     gap: 25px;
 }
 
-.container .signup-form-container input{
+.signup-container .signup-form-container input{
     padding: 10px;
     border: none;
     border-bottom: 1px solid lightgrey;
 }
 
-.container .signup-form-buttons{
+.signup-container .signup-form-buttons{
     display: grid;
     gap: 10px;
 }
 
-.container .signup-form-buttons #create{
+.signup-container .signup-form-buttons #create{
     padding: 10px;
     border: none;
     background-color:crimson;
@@ -95,7 +104,7 @@
     border-radius: 3px;
 }
 
-.container .signup-form-buttons #google{
+.signup-container .signup-form-buttons #google{
     padding: 10px;
     border: none;
     background-color: white;
@@ -105,12 +114,12 @@
     border-radius: 3px;
 }
 
-.container .signup-form-footer{
+.signup-container .signup-form-footer{
     display: flex;
     gap: 10px;
 }
 
-.container .signup-form-footer a{
+.signup-container .signup-form-footer a{
     text-decoration: none;
     color: crimson;
 }
@@ -219,5 +228,53 @@
 
     .footer-copyright {
         font-size: 0.8rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .top {
+        border-bottom: 1px solid gray;
+    }
+
+    .header,
+    .footer,
+    .top {
+        background-color: #1f1f1f;
+        color: #ffffff;
+    }
+
+    .top .language-select select {
+        background-color: lightgrey;
+        color: black;
+    }
+
+    .header .nav a {
+        color: white;
+    }
+
+    input {
+        background-color: #333;
+        color: #fff;
+        border-color: #555;
+    }
+
+    button#create {
+        background-color: #bb86fc;
+        color: #fff;
+    }
+
+    button#google {
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #666;
+    }
+
+    a {
+        color: #bb86fc;
     }
 }
