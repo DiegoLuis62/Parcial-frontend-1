@@ -37,6 +37,12 @@ input, button {
     margin-left: 10px;
 }
 
+.header .nav-icons {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
 .language-select select {
     background-color: black;
     color: white;
