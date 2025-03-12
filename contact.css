@@ -90,3 +90,50 @@ button:hover {
         flex-direction: column;
     }
 }
+
+
+
+/* Negro */
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .contact-container {
+        background: #1f1f1f;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .info-box {
+        background: #222;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #d9534f;
+    }
+
+    .contact-form {
+        background: #222;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    input, textarea {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #555;
+    }
+
+    button {
+        background: #d9534f;
+        color: #fff;
+    }
+
+    button:hover {
+        background: #d9534f;
+    }
+
+    a {
+        color: #d9534f;
+    }
+}
