@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
   
-    height: 30rem; /* Ocupa toda la pantalla */
+    min-height: 50vh; /* Ocupa toda la pantalla */
     overflow: hidden;
 }
 
@@ -46,6 +46,16 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        
+        top: 0;
+        left: 0;
+        height: auto;
+        padding: 10px;
+    }
+}
 
 
 /* slider */
@@ -53,10 +63,9 @@ body {
 
 
 .slider-frame {
-	width: auto;
-    height: auto;
-	
-	overflow: hidden;
+	width: 100%;
+	overflow:hidden;
+    height: 70vh;
 }
 
 .slider-frame ul {
@@ -74,7 +83,6 @@ body {
 
 .slider-frame img {
 	width: 100%;
-   
 }
 
 @keyframes slide {
@@ -92,11 +100,35 @@ body {
 }
 
 
+@media (max-width: 768px) { /* Para tablets y celulares */
+    .slider-frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-frame ul {
+        width: 400%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .slider-frame li {
+        width: 100%;
+    }
+
+    .slider-frame img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
 /* Categorias */
 
 .container2 {
     width: 100%;
-    height: 20rem; /* Altura fija */
+    min-height: 40vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -125,12 +157,11 @@ h2 {
 
 .category-list {
     display: flex;
-    justify-content: center; /* Centrar elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center;
     gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Ocultar scrollbar en Firefox */
-    -ms-overflow-style: none; /* Ocultar scrollbar en IE/Edge */
 }
 
 .category-list::-webkit-scrollbar {
@@ -392,7 +423,7 @@ section div img {
 
 .speaker {
     max-width: 40%;
-    margin-right: 10rem;
+    margin: auto;
 }
 
 .speaker img {
