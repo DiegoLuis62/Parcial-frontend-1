@@ -148,6 +148,14 @@ input, button {
     text-align: center;
 }
 
+.our-story .garantee {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
 .story-container {
     display: flex;
     justify-content: space-between;
